@@ -128,7 +128,7 @@ docker stop deployflow && docker rm deployflow
 ## 👤 Author
 
 **Dakshina** — Aspiring DevOps Engineer
-[LinkedIn] | [GitHub]
+
 
 ---
 *Built as a hands-on learning project covering the full DevOps lifecycle.*
