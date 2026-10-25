@@ -2,3 +2,7 @@
 __pycache__/
 *.pyc
 
+deployflow-key.pem
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
