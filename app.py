@@ -7,7 +7,7 @@ todos = []
 @app.route("/")
 def home():
     return """
-    <h1>📝 My To-Do App</h1>
+    <h1>🚀 DeployFlow v2 — deployed by CI/CD!</h1>
     <p>Add a task: POST /todos {"task": "learn docker"}</p>
     <p>See tasks: GET /todos</p>
     <p>Health check: GET /health</p>
