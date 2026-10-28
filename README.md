@@ -110,7 +110,7 @@ docker stop deployflow && docker rm deployflow
 - [x] **Phase 2** — Version control with Git/GitHub
 - [x] **Phase 3** — AWS infrastructure with Terraform (VPC, EC2, security group, SSH key)
 - [x] **Phase 3b** — Manual deployment: app live on EC2 via Docker
-- [x] **Phase 4** — CI/CD pipeline with GitHub Actions (auto build + deploy on every push)
+- [x] **Phase 4** — CI/CD pipeline with GitHub Actions (auto build + Trivy scan + deploy on every push)
 - [ ] **Phase 5** — Monitoring: CloudWatch alarms + Prometheus/Grafana dashboards
 - [ ] **Phase 6** — Kubernetes deployment (kind)
 - [ ] **Phase 7** — Cost cleanup & documentation
