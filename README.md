@@ -108,7 +108,8 @@ docker stop deployflow && docker rm deployflow
 
 - [x] **Phase 1** — Containerize Flask API with Docker
 - [x] **Phase 2** — Version control with Git/GitHub
-- [ ] **Phase 3** — Provision AWS infrastructure with Terraform (EC2, VPC, IAM, S3)
+- [x] **Phase 3** — AWS infrastructure with Terraform (VPC, EC2, security group, SSH key)
+- [x] **Phase 3b** — Manual deployment: app live on EC2 via Docker
 - [ ] **Phase 4** — CI/CD pipeline with GitHub Actions + Trivy scanning
 - [ ] **Phase 5** — Monitoring: CloudWatch alarms + Prometheus/Grafana dashboards
 - [ ] **Phase 6** — Kubernetes deployment (kind)
