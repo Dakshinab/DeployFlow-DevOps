@@ -112,7 +112,7 @@ docker stop deployflow && docker rm deployflow
 - [x] **Phase 3b** — Manual deployment: app live on EC2 via Docker
 - [x] **Phase 4** — CI/CD pipeline with GitHub Actions (auto build + Trivy scan + deploy on every push)
 - [x] **Phase 5** — Monitoring: CloudWatch alarms + Prometheus/Grafana dashboards
-- [ ] **Phase 6** — Kubernetes deployment (kind)
+- [x] **Phase 6** — Kubernetes deployment (kind)
 - [ ] **Phase 7** — Cost cleanup & documentation
 
 ## 💡 Key DevOps Practices Demonstrated

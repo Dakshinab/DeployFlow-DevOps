@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployflow
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: deployflow
+  template:
+    metadata:
+      labels:
+        app: deployflow
+    spec:
+      containers:
+        - name: deployflow
+          image: dakshinabhanu/deployflow:d8f5fb9563cd9c23c033ba93004f52c67778a824
+          ports:
+            - containerPort: 5000
