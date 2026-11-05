@@ -116,6 +116,7 @@ docker stop deployflow && docker rm deployflow
   - App up (1 = yes, 0 = no): `up{job="deployflow"}`
 - **CloudWatch alarms** (email through SNS): `deployflow-high-cpu` (CPU above 80% for 5 minutes) and `deployflow-instance-down` (server health check failing for 2 minutes).
 - CloudWatch watches the **server**. Only Prometheus notices when the **app** stops while the server is still on.
+- The Grafana dashboard is saved as `monitoring/grafana-dashboard.json` (in Grafana: Dashboards, New, Import)
 
 ## ☸️ Run on Kubernetes (local)
 
