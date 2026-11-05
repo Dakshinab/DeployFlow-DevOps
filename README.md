@@ -13,43 +13,7 @@ real companies ship software.
 
 ## 🏗️ Architecture
 
-```
-                    ┌──────────────────┐
-                    │   Developer      │
-                    │   (WSL2 + Git)   │
-                    └────────┬─────────┘
-                             │ git push
-                             ▼
-                    ┌──────────────────┐
-                    │    GitHub        │
-                    │  (source code)   │
-                    └────────┬─────────┘
-                             │ triggers
-                             ▼
-                    ┌──────────────────┐
-                    │ GitHub Actions   │
-                    │  (CI/CD pipeline)│
-                    └────────┬─────────┘
-                             │ build + scan
-                             ▼
-                    ┌──────────────────┐
-                    │  Docker Image    │
-                    │  (registry)      │
-                    └────────┬─────────┘
-                             │ deploy
-                             ▼
-        ┌────────────────────────────────────────┐
-        │              AWS Cloud                  │
-        │  ┌──────┐   ┌────────────┐  ┌────────┐ │
-        │  │ VPC  │──▶│ EC2 + App  │  │  S3    │ │
-        │  └──────┘   └─────┬──────┘  └────────┘ │
-        │                   ▼                    │
-        │  ┌──────────────────────────────┐      │
-        │  │ Monitoring: CloudWatch +     │      │
-        │  │ Prometheus / Grafana         │      │
-        │  └──────────────────────────────┘      │
-        └────────────────────────────────────────┘
-```
+![DeployFlow architecture](docs/architecture.svg)
 
 ## 🛠️ Tech Stack
 
